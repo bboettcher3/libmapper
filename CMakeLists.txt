@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.19)
 # Replace with your own global paths before building and modify build directories if different from below
 set(BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/build")
 set(LIBMAPPER_INCLUDES "${CMAKE_CURRENT_SOURCE_DIR}/include")
-set(LIBLO_DIR "<your_liblo_root>")
+set(LIBLO_DIR "C:/Users/brady/Documents/GitHub/McGill/liblo")
 set(LIBLO_BUILD_DIR "${LIBLO_DIR}/cmake/build/Debug")
-set(ZLIB_DIR "<your_zlib_root>")
+set(ZLIB_DIR "C:/Users/brady/Documents/GitHub/McGill/zlib-msvc14-x64.1.2.11.7795")
 set(ZLIB_BUILD_DIR "${ZLIB_DIR}/build/native/lib_debug")
 set(LIBLO_INCLUDES "${LIBLO_DIR}/cmake/build;${LIBLO_DIR}")
 
@@ -120,4 +120,4 @@ if (WIN32)
   endif()
 endif ()
 
-
+add_subdirectory(swig)
